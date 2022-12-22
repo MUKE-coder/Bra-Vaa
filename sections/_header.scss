@@ -1,0 +1,71 @@
+header {
+  background-color: $gray-dark;
+  padding: 1rem 5rem;
+  // width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      color: $primary;
+      font-size: 1.6rem;
+      font-weight: 700;
+      span {
+        color: $secondary;
+      }
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      .v-line {
+        height: 10px;
+        width: 1px;
+        background-color: $dark;
+      }
+      .main-nav {
+        display: flex;
+        gap: 2rem;
+        a {
+          color: $dark;
+          font-size: 1.1rem;
+          transition: all 0.5s;
+          position: relative;
+          padding: 0.3rem 0;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 1px;
+            background-color: $primary;
+            transition: all 0.6s;
+          }
+          &:hover {
+            color: $primary;
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .icon {
+          cursor: pointer;
+          i {
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.hero-section {
+  background-color: $gray-light;
+  padding: 3rem 5rem;
+  height: 100vh;
+  .row {
+    height: 100%;
+    .right {
+      .hero-image {
+        text-align: center;
+        width: 100%;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

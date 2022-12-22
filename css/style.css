@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 8rem 5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row .left {
+  width: 60%;
+}
+.row .right {
+  width: 40%;
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.text-secondary {
+  color: #047857;
+}
+
+.section-paragraph {
+  padding: 3rem 0;
+  padding-top: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #ea580c;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+.btn-primary:hover {
+  background-color: #f97316;
+}
+
+header {
+  background-color: #cbd5e1;
+  padding: 1rem 5rem;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav .logo {
+  color: #ea580c;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+header nav .logo span {
+  color: #047857;
+}
+header nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+header nav .nav-links .v-line {
+  height: 10px;
+  width: 1px;
+  background-color: #111827;
+}
+header nav .nav-links .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+header nav .nav-links .main-nav a {
+  color: #111827;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  padding: 0.3rem 0;
+}
+header nav .nav-links .main-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #ea580c;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+header nav .nav-links .main-nav a:hover {
+  color: #ea580c;
+}
+header nav .nav-links .main-nav a:hover::before {
+  width: 100%;
+}
+header nav .nav-links .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+header nav .nav-links .nav-icons .icon {
+  cursor: pointer;
+}
+header nav .nav-links .nav-icons .icon i {
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header nav .nav-links .nav-icons .icon i:hover {
+  color: #ea580c;
+}
+
+.hero-section {
+  background-color: #f1f5f9;
+  padding: 3rem 5rem;
+  height: 100vh;
+}
+.hero-section .row {
+  height: 100%;
+}
+.hero-section .row .right .hero-image {
+  text-align: center;
+  width: 100%;
+}
+.hero-section .row .right .hero-image img {
+  width: 70%;
+}
